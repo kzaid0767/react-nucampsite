@@ -29,6 +29,7 @@ class Contact extends Component {
             }
         };
 
+        this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this)  //bind this to constructor
     }
 
@@ -39,7 +40,7 @@ class Contact extends Component {
 
         this.setState({
             [name]: value
-        })
+        });
 
     };
 

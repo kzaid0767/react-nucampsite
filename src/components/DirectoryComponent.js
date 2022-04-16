@@ -19,9 +19,12 @@ function Directory (props) {
 
     const directory = props.campsites.map(campsite => {
         return (
+            
             <div key={campsite.id} className="col-md-5 m-1">
                 <RenderDirectoryItem campsite={campsite} />
+                
             </div>
+            
         );
     });
 
@@ -39,11 +42,7 @@ function Directory (props) {
             </div>
             <div className='row'>
                 {directory}
-            </div>
-            
-            
-            
-            
+            </div> 
         </div>
     );
     

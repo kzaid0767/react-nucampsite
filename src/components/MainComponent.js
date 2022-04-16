@@ -12,7 +12,7 @@ import {connect} from 'react-redux';
     const mapStateToProps = state => {
         return {
             campsites: state.campsites,
-            commments: state.comments,
+            comments: state.comments,
             partners: state.partners,
             promotions: state.promotions
         }
@@ -34,8 +34,8 @@ class Main extends Component {
         const CampsiteWithId = ({match}) => {
             return (
                 <CampsiteInfo 
-                campsite={this.props.campsites.filter(campsite=>campsite.id === +match.params.campsiteId)[0]} 
-                comments={this.props.comments.filter(comment => comment.campsiteId === +match.params.campsiteId)} />
+                campsite={this.props.campsites.filter(campsite=>campsite.id === +match.params.campsiteId)[0]} comments={this.props.comments.filter(comment => comment.campsiteId === +match.params.campsiteId)}  
+                />
             );
         }
 
