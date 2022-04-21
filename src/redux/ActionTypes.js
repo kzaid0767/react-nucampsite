@@ -1,0 +1,1 @@
+export const ADD_COMMENT = 'ADD_COMMNET'; //creating the const and just exporting it
